@@ -19,6 +19,7 @@ if (kDown)  v_spd =  1;
 x += h_spd * move_spd;
 y += v_spd * move_spd;
 
+// Shooting
 if(shoot_cooldown > 0) shoot_cooldown--;
 
 if (kShoot){
@@ -26,5 +27,13 @@ if (kShoot){
 		shoot_cooldown = shoot_cooldown_int
 		instance_create_depth(x,y,1,obj_bubble,{angle: angle-90, bubble: variable_clone(bubble)})
 	}	
+}
+
+// Leveling
+var xp = instance_place(x,y,obj_xp);
+
+if(xp != noone){
+	experience += xp.amount;
+	instance_destroy(xp);
 }
 

@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"p_bad",
+  "%Name":"obj_spider",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"p_bad",
+  "name":"obj_spider",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
     "path":"folders/Objects/Main Game/Enemies.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"p_bad",
+    "path":"objects/p_bad/p_bad.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +33,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_spider",
+    "path":"sprites/spr_spider/spr_spider.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -10,5 +10,5 @@ if(monster_timer <= 0 ){
 	var _margin = 100
 	var spawn_coords = random_point_on_boundary(VIEW_X - _margin, VIEW_Y - _margin, VIEW_R + _margin, VIEW_B + _margin);
 	
-	instance_create_depth(spawn_coords.x,spawn_coords.y,1,obj_slime)
+	instance_create_depth(spawn_coords.x,spawn_coords.y,1,obj_spider)
 }

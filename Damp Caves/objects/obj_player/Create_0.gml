@@ -5,7 +5,9 @@ y = room_height/2;
 move_spd = 4;
 
 shoot_cooldown = 0;
-shoot_cooldown_int = 120;
+shoot_cooldown_int = 90;
+
+xp_range = 64;
 
 bubble = {
 	unlocked: true,
@@ -15,3 +17,4 @@ bubble = {
 	damage: 1
 };
 
+experience = 0;

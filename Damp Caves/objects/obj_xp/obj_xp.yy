@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"p_bad",
+  "%Name":"obj_xp",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"p_bad",
+  "name":"obj_xp",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_xp",
+    "path":"sprites/spr_xp/spr_xp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
