@@ -33,6 +33,7 @@
     {"name":"spr_background","order":3,"path":"sprites/spr_background/spr_background.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_spider","order":2,"path":"sprites/spr_spider/spr_spider.yy",},
+    {"name":"spr_xp_bar","order":5,"path":"sprites/spr_xp_bar/spr_xp_bar.yy",},
     {"name":"spr_xp","order":4,"path":"sprites/spr_xp/spr_xp.yy",},
   ],
 }

@@ -43,6 +43,7 @@
   },
   "name":"Damp Caves",
   "resources":[
+    {"id":{"name":"fnt_game","path":"fonts/fnt_game/fnt_game.yy",},},
     {"id":{"name":"obj_bubble","path":"objects/obj_bubble/obj_bubble.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_player_camera","path":"objects/obj_player_camera/obj_player_camera.yy",},},
@@ -62,6 +63,7 @@
     {"id":{"name":"spr_slime_outline","path":"sprites/spr_slime_outline/spr_slime_outline.yy",},},
     {"id":{"name":"spr_slime","path":"sprites/spr_slime/spr_slime.yy",},},
     {"id":{"name":"spr_spider","path":"sprites/spr_spider/spr_spider.yy",},},
+    {"id":{"name":"spr_xp_bar","path":"sprites/spr_xp_bar/spr_xp_bar.yy",},},
     {"id":{"name":"spr_xp","path":"sprites/spr_xp/spr_xp.yy",},},
   ],
   "resourceType":"GMProject",

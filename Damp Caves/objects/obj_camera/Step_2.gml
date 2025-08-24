@@ -10,3 +10,14 @@ if instance_exists(obj_player_camera) && instance_exists(obj_player){
 }else{
 	camera_set_view_pos(view_camera[0], room_width * 0.5 - view_width * 0.5, room_height * 0.5 - view_height * 0.5);
 }
+
+// Leveled up
+
+if(obj_player.level_up){
+	if(xp_y_offset < xp_y_offset_goal){
+		xp_y_offset+= 8;	
+	}
+	if(xp_alpha < 1){
+		xp_alpha +=0.05	
+	}
+}

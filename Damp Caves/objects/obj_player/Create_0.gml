@@ -17,4 +17,9 @@ bubble = {
 	damage: 1
 };
 
-experience = 0;
+level = 1;
+xp = 0;
+max_xp = 5;
+level_up = false;
+
+global.paused = false;
