@@ -22,7 +22,19 @@ xp = 0;
 max_xp = 5;
 level_up = false;
 level_up_setup = false;
+total_perks = 3;
 
 global.paused = false;
 
 cutscene_active = false
+
+perks = array_create(PERKS.COUNT,0)
+
+limit[PERKS.BUBBLE_DAMAGE] = 8;
+limit[PERKS.BUBBLE_LIFESPAN] = 5;
+limit[PERKS.BUBBLE_PIERCE] = 5;
+limit[PERKS.BUBBLE_SIZE] = 5;
+limit[PERKS.BUBBLE_SPEED] = 10;
+limit[PERKS.BUBBLE_STUN] = 10;
+limit[PERKS.TOTAL_PERKS] = 3;
+limit[PERKS.SHOOT_SPEED] = 5;

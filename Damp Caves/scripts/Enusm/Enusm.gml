@@ -32,4 +32,16 @@ function Enusm(){
 		TET_SPEAK,
 		CUSTOM_SCRIPT,
 	}
+	
+	enum PERKS {
+		SHOOT_SPEED,
+		BUBBLE_DAMAGE,
+		BUBBLE_SIZE,
+		BUBBLE_SPEED,
+		BUBBLE_LIFESPAN,
+		BUBBLE_STUN,
+		BUBBLE_PIERCE,
+		TOTAL_PERKS,
+		COUNT,	// End of Enum
+	}
 }

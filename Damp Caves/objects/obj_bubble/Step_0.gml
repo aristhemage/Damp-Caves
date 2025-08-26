@@ -1,4 +1,6 @@
 if(!global.paused){
+	image_xscale = bubble.size;
+	image_yscale = bubble.size;
 	x += lengthdir_x(bubble.spd,angle)
 	y += lengthdir_y(bubble.spd,angle)
 
