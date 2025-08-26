@@ -48,6 +48,23 @@ if(!global.paused){
 	}
 }
 
+if(level_up && !level_up_setup){
+	with(obj_cutscene_master){
+		var cutscene = 
+		[
+			action_wait_for_var_greater(obj_camera, "xp_y_offset", obj_camera.xp_y_offset_goal),
+			action_create_object(obj_perk,obj_player.x,obj_player.y, {upgrade_num:0}),
+			action_create_object(obj_perk,obj_player.x,obj_player.y, {upgrade_num:1}),
+			action_create_object(obj_perk,obj_player.x,obj_player.y, {upgrade_num:2}),
+		]
+	
+		start_cutscene(cutscene);
+	}
+	level_up_setup = true;
+	
+	
+	
+}
 // Debug
 
 if(keyboard_check_released(ord("L"))){

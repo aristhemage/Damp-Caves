@@ -15,9 +15,9 @@ if instance_exists(obj_player_camera) && instance_exists(obj_player){
 
 if(obj_player.level_up){
 	if(xp_y_offset < xp_y_offset_goal){
-		xp_y_offset+= 8;	
+		xp_y_offset+= 4;	
 	}
 	if(xp_alpha < 1){
-		xp_alpha +=0.05	
+		xp_alpha +=0.01	
 	}
 }
