@@ -45,13 +45,13 @@ if(!global.paused){
 
 	// Leveling
 	var experience = instance_place(x,y,obj_xp);
-
+	xp_range = 32 + perks[PERKS.EXP_PICKUP_RANGE]*5;
 	if(experience != noone){
 		xp += experience.amount;
 		instance_destroy(experience);
 	}
 	total_perks = 3 + perks[PERKS.TOTAL_PERKS];
-	show_debug_message(3 + perks[PERKS.TOTAL_PERKS])
+
 	if(xp >= max_xp){
 		level++;
 		xp -= max_xp;

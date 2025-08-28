@@ -45,6 +45,10 @@ switch (perk) {
     case PERKS.TOTAL_PERKS: 
         txt = "Total Perks"; 
     break;
+	
+    case PERKS.EXP_PICKUP_RANGE: 
+        txt = "EXP Pickup range"; 
+    break;
 
     default:
         txt = "Unknown Perk";

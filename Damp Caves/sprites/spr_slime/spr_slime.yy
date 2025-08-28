@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Sprites/Main Game/Enemies.yy",
+    "name":"Slime",
+    "path":"folders/Sprites/Main Game/Enemies/Slime.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

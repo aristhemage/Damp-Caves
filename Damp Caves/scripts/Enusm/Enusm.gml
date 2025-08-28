@@ -10,6 +10,7 @@ function Enusm(){
 		FOLLOW_PLAYER,
 		PREPARE_LEAP,
 		LEAP,
+		MUSHROOM_PREP,
 	}
 	
 	enum ACTION {
@@ -42,6 +43,8 @@ function Enusm(){
 		BUBBLE_STUN,
 		BUBBLE_PIERCE,
 		TOTAL_PERKS,
+		EXP_PICKUP_RANGE,
+		SPOTLIGHT_RANGE,
 		COUNT,	// End of Enum
 	}
 }
