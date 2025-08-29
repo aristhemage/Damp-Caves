@@ -10,6 +10,10 @@ if(!global.paused){
 	var kUp    = keyboard_check(vk_up)    || keyboard_check(ord("W"));
 	var kDown  = keyboard_check(vk_down)  || keyboard_check(ord("S"));
 	var kShoot  = keyboard_check(vk_space) || mouse_check_button(mb_left);
+	var kAutoFire  = keyboard_check_released(ord("Q"));
+	
+	if(kAutoFire){auto_fire = !auto_fire}
+	if(auto_fire){kShoot = true;}
 
 	// Movement
 	if (kLeft)  h_spd = -1;

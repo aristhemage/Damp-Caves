@@ -8,7 +8,7 @@ camera_apply(VIEW);
 draw_clear_alpha(0, 1);
 gpu_set_blendmode(bm_subtract);
 // Spotlight
-draw_circle(obj_player.x, obj_player.y, 150 + obj_player.perks[PERKS.SPOTLIGHT_RANGE]*10, false);
+draw_circle(obj_player.x, obj_player.y, 150 + obj_player.perks[PERKS.SPOTLIGHT_RANGE]*30, false);
 gpu_set_blendmode(bm_normal);
 surface_reset_target();
 

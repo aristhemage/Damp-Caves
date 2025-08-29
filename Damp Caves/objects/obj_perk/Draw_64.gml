@@ -9,6 +9,9 @@ draw_sprite(spr,0,_x,_y)
 if (mouse_in_sprite_GUI(spr, _x, _y)) {
     if(mouse_check_button_released(mb_left)){
 		obj_player.perks[perk]++;
+		if(is_double){
+			obj_player.perks[perk]++
+		}
 		unpause()
 	}
 }
@@ -56,3 +59,10 @@ switch (perk) {
 }
 
 draw_text_transformed(_x,_y,txt,0.25,0.25,0)
+if(is_double){
+	if(obj_player.perks[perk] + 2 > obj_player.limit[perk]){
+		is_double = false				
+	}else{
+		draw_text_transformed(_x+20,_y+20,"x2!",0.25,0.25,0)	
+	}
+}

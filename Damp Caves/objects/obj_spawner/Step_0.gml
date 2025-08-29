@@ -1,13 +1,13 @@
 difficulty_timer--;
 if(difficulty_timer <= 0){
-	difficulty_timer = 300;
+	difficulty_timer = 600;
 	difficulty++;
 }
 
 monster_timer--;
 if(monster_timer <= 0 ){
 	monster_timer = 600-difficulty;
-	var spawnNum = min(1,round(difficulty/5));
+	var spawnNum = max(2,round(difficulty/5));
 	var _margin = 100
 	
 	repeat(spawnNum){
@@ -16,3 +16,5 @@ if(monster_timer <= 0 ){
 		instance_create_depth(spawn_coords.x,spawn_coords.y,1,choice)
 	}
 }
+
+show_debug_message(difficulty)

@@ -1,4 +1,4 @@
-difficulty = 0;
+difficulty = 3;
 difficulty_timer = 300;
 
 
