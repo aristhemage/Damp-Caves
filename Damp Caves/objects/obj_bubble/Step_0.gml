@@ -16,6 +16,7 @@ if (bad != noone && image_alpha >= 1) {
         bad.hp -= bubble.damage;
         bubble.pierce--;
         ds_list_add(hit_list, bad.id);
+		bad.stun_timer = obj_player.perks[PERKS.BUBBLE_STUN]*60; 
     }
 }
 		if(bubble.pierce <= 0){

@@ -4,4 +4,6 @@ if(!global.paused){
 		x += lengthdir_x(5,dir)	
 		y += lengthdir_y(5,dir)	
 	}
+	image_xscale = max(1,amount/2);
+	image_yscale = max(1,amount/2);
 }

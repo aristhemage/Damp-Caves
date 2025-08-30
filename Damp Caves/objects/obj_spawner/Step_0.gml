@@ -17,4 +17,4 @@ if(monster_timer <= 0 ){
 	}
 }
 
-show_debug_message(difficulty)
+//show_debug_message(difficulty)

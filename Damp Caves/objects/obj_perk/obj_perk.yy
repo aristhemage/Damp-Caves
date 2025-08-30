@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_red_square",
-    "path":"sprites/spr_red_square/spr_red_square.yy",
+    "name":"spr_upgrade_icon",
+    "path":"sprites/spr_upgrade_icon/spr_upgrade_icon.yy",
   },
   "spriteMaskId":null,
   "visible":true,

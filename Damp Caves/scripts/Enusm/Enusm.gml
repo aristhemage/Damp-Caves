@@ -11,6 +11,7 @@ function Enusm(){
 		PREPARE_LEAP,
 		LEAP,
 		MUSHROOM_PREP,
+		STUNNED,
 	}
 	
 	enum ACTION {

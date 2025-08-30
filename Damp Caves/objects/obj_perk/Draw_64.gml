@@ -1,12 +1,10 @@
-var spr = spr_red_square;
-
 var _x = ((1800 - (obj_player.total_perks * 256)) / 2) + (upgrade_num * 256);
 
 var _y = 450;
-draw_sprite(spr,0,_x,_y)
+draw_sprite(spr_upgrade_icon,0,_x,_y)
 
 
-if (mouse_in_sprite_GUI(spr, _x, _y)) {
+if (mouse_in_sprite_GUI(spr_upgrade_icon, _x, _y)) {
     if(mouse_check_button_released(mb_left)){
 		obj_player.perks[perk]++;
 		if(is_double){
@@ -22,7 +20,8 @@ switch (perk) {
     break;
 
     case PERKS.BUBBLE_DAMAGE: 
-        txt = "Bubble Damage"; 
+		txt = ""
+        draw_sprite(spr_upgrade_damage,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_SIZE: 
@@ -30,7 +29,8 @@ switch (perk) {
     break;
 
     case PERKS.BUBBLE_SPEED: 
-        txt = "Bubble Speed"; 
+        txt = ""; 
+		draw_sprite(spr_upgrade_bubble_speed,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_LIFESPAN: 
@@ -51,6 +51,10 @@ switch (perk) {
 	
     case PERKS.EXP_PICKUP_RANGE: 
         txt = "EXP Pickup range"; 
+    break;
+	
+    case PERKS.SPOTLIGHT_RANGE: 
+        txt = "Spotlight Range"; 
     break;
 
     default:

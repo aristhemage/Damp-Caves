@@ -34,7 +34,17 @@ if(!global.paused){
 					state = ENEMY_STATE.FOLLOW_PLAYER	
 				}
 			break;
+			case ENEMY_STATE.STUNNED:
+			    stun_timer--;
+			    if(stun_timer <= 0) {
+			        state = ENEMY_STATE.FOLLOW_PLAYER;
+			        stun_timer = 0;
+			    }
+			break;
 		}
 	}
 	image_xscale = x > obj_player.x ? scale:-scale
+	if(stun_timer > 0){
+		state = ENEMY_STATE.STUNNED;
+	}
 }
