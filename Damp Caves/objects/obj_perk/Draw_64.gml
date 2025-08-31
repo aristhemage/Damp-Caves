@@ -12,8 +12,10 @@ if (mouse_in_sprite_GUI(spr_upgrade_icon, _x, _y)) {
 		}
 		unpause()
 	}
+	// Upgrade Description
+	draw_sprite_ext(spr_upgrade_desc,0,700,700,20,3,0,c_white,1)
 }
-
+txt = ""; 
 switch (perk) {
     case PERKS.SHOOT_SPEED: 
         txt = "Shoot Speed"; 
@@ -25,7 +27,8 @@ switch (perk) {
     break;
 
     case PERKS.BUBBLE_SIZE: 
-        txt = "Bubble Size"; 
+		text = ""
+        draw_sprite(spr_upgrade_size,0,_x,_y) 
     break;
 
     case PERKS.BUBBLE_SPEED: 
