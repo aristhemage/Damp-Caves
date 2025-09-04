@@ -38,7 +38,7 @@ if(!global.paused){
 	
 	// Cooldown
 	if(shoot_cooldown > 0) shoot_cooldown--;
-perks[PERKS.SHOOT_SPEED] = 10;
+
 	// Actually shoot
 	if (kShoot){
 		if(shoot_cooldown <= 0){
