@@ -8,8 +8,8 @@
   "name":"obj_perk_spawner",
   "overriddenProperties":[],
   "parent":{
-    "name":"Main Game",
-    "path":"folders/Objects/Main Game.yy",
+    "name":"Upgrades",
+    "path":"folders/Objects/Main Game/Upgrades.yy",
   },
   "parentObjectId":null,
   "persistent":false,

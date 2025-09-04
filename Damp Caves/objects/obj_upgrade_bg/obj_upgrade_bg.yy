@@ -1,13 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_perk",
+  "%Name":"obj_upgrade_bg",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_perk",
+  "name":"obj_upgrade_bg",
   "overriddenProperties":[],
   "parent":{
     "name":"Upgrades",
@@ -32,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_upgrade_icon",
-    "path":"sprites/spr_upgrade_icon/spr_upgrade_icon.yy",
+    "name":"spr_upgrade_bg",
+    "path":"sprites/spr_upgrade_bg/spr_upgrade_bg.yy",
   },
   "spriteMaskId":null,
   "visible":true,

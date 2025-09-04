@@ -28,6 +28,6 @@ surface_resize(application_surface,view_width*window_scale,view_height*window_sc
  
 
 // XP Stuff
-xp_y_offset_goal = 128
+xp_y_offset_goal = 120
 xp_y_offset = 0
 xp_alpha = 0;

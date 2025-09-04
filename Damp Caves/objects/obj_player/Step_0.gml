@@ -30,31 +30,31 @@ if(!global.paused){
 	bubble = {
 		unlocked: true,
 	    spd: 4 + perks[PERKS.BUBBLE_SPEED],
-	    life: 30 + perks[PERKS.BUBBLE_LIFESPAN],
+	    life: 60 + perks[PERKS.BUBBLE_LIFESPAN],
 	    pierce: 1 + perks[PERKS.BUBBLE_PIERCE],
 		damage: 1 + perks[PERKS.BUBBLE_DAMAGE],
-		size: 1 + perks[PERKS.BUBBLE_SIZE]/2,
+		size: 1 + perks[PERKS.BUBBLE_SIZE],
 	};
 	
 	// Cooldown
 	if(shoot_cooldown > 0) shoot_cooldown--;
-
+perks[PERKS.SHOOT_SPEED] = 10;
 	// Actually shoot
 	if (kShoot){
 		if(shoot_cooldown <= 0){
-			shoot_cooldown = shoot_cooldown_int-perks[PERKS.SHOOT_SPEED]*5
+			shoot_cooldown = shoot_cooldown_int-perks[PERKS.SHOOT_SPEED]*7.5
 			instance_create_depth(x,y,1,obj_bubble,{angle: angle-90, bubble: variable_clone(bubble)})
 		}	
 	}
 
 	// Leveling
 	var experience = instance_place(x,y,obj_xp);
-	xp_range = 32 + perks[PERKS.EXP_PICKUP_RANGE]*5;
+	xp_range = 32 + perks[PERKS.EXP_PICKUP_RANGE]*15;
 	if(experience != noone){
 		xp += experience.amount;
 		instance_destroy(experience);
 	}
-	total_perks = 3 + perks[PERKS.TOTAL_PERKS];
+	total_perks = 2 + perks[PERKS.TOTAL_PERKS];
 
 	if(xp >= max_xp){
 		level++;
@@ -70,8 +70,10 @@ if(level_up && !level_up_setup){
 	with(obj_cutscene_master){
 		var cutscene = 
 		[
+			action_create_object(obj_upgrade_bg,obj_player.x,obj_player.y),
 			action_wait_for_var_greater(obj_camera, "xp_y_offset", obj_camera.xp_y_offset_goal),
 			action_create_object(obj_perk_spawner,obj_player.x,obj_player.y),
+			
 
 			
 

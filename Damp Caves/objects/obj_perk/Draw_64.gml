@@ -1,6 +1,11 @@
-var _x = ((1800 - (obj_player.total_perks * 256)) / 2) + (upgrade_num * 256);
+var _x = 200
 
-var _y = 450;
+var spacing   = sprite_get_height(spr_upgrade_bg); // height of your upgrade bg
+var total_h   = obj_player.total_perks * spacing;  // total stack height
+var start_y   = (1080 - total_h) / 2;       // centers vertically
+
+var _y = start_y + (upgrade_num * spacing);
+
 draw_sprite(spr_upgrade_icon,0,_x,_y)
 
 
@@ -13,7 +18,7 @@ if (mouse_in_sprite_GUI(spr_upgrade_icon, _x, _y)) {
 		unpause()
 	}
 	// Upgrade Description
-	draw_sprite_ext(spr_upgrade_desc,0,700,700,20,3,0,c_white,1)
+	//draw_sprite_ext(spr_upgrade_desc,0,700,700,20,3,0,c_white,1)
 }
 txt = ""; 
 switch (perk) {

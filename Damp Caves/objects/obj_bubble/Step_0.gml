@@ -12,10 +12,10 @@ if(!global.paused){
 	var bad = instance_place(x,y,p_bad);
 
 if (bad != noone && image_alpha >= 1) {
-    if (!ds_list_find_index(hit_list, bad.id) != -1) {
+    if (!array_contains(hit_list,bad.id)) {
         bad.hp -= bubble.damage;
         bubble.pierce--;
-        ds_list_add(hit_list, bad.id);
+        hit_list[array_length(hit_list)+1] = bad.id
 		bad.stun_timer = obj_player.perks[PERKS.BUBBLE_STUN]*60; 
     }
 }

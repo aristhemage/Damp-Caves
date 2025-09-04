@@ -1,1 +1,1 @@
-hit_list = ds_list_create();
+hit_list = [];

@@ -37,10 +37,12 @@ if(obj_player.level_up){
 	draw_set_colour(c_white);
 	// Draw text
 	draw_set_alpha(xp_alpha);
-	draw_text_transformed(VIEW_CENTER_X, VIEW_CENTER_Y - xp_y_offset, "Choose your perk", 0.5, 0.5, 0);
+	draw_text_transformed(VIEW_CENTER_X, VIEW_Y + xp_y_offset, "Choose your perk", 0.5, 0.5, 0);
 
 	// Reset
 	draw_set_alpha(1);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 }
+
+show_debug_message("X: " + string(device_mouse_x_to_gui(0)) + " Y: " + string(device_mouse_y_to_gui(0)))

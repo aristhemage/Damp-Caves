@@ -10,5 +10,8 @@ function unpause(){
 		with(obj_perk){
 			instance_destroy();
 		}
+		with(obj_upgrade_bg){
+			instance_destroy();
+		}
 		
 }
