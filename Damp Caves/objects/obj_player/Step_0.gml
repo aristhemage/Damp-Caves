@@ -54,7 +54,7 @@ if(!global.paused){
 		xp += experience.amount;
 		instance_destroy(experience);
 	}
-	total_perks = 2 + perks[PERKS.TOTAL_PERKS];
+	total_perks = 3 + perks[PERKS.TOTAL_PERKS];
 
 	if(xp >= max_xp){
 		level++;
@@ -64,6 +64,25 @@ if(!global.paused){
 		global.paused = true;
 	
 	}
+	
+	//Getting hit
+	var enemy = instance_place(x,y,[p_bad,obj_mushroom_cloud])
+	if(enemy != noone){
+		if(invince_timer <= 0){
+			invince_timer = 80;
+			hp--;
+		}
+	}
+	if(invince_timer > 0){
+		invince_timer--;	
+	}
+
+	if(invince_timer == 0 || invince_timer % 10 == 0){
+		image_alpha = 1;
+	}else{
+		image_alpha = 0.5
+	}
+
 }
 
 if(level_up && !level_up_setup){
@@ -86,8 +105,12 @@ if(level_up && !level_up_setup){
 	
 	
 }
+
+
 // Debug
 
 if(keyboard_check_released(ord("L"))){
 	xp = max_xp	
 }
+
+show_debug_message(invince_timer)

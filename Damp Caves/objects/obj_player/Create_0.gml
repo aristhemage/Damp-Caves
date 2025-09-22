@@ -18,6 +18,11 @@ xp = 0;
 max_xp = 5;
 level_up = false;
 level_up_setup = false;
+
+hp = 5;
+max_hp = 5;
+regen_rate = 600;
+invince_timer = 0;
 // Number of perks set in step
 
 global.paused = false;
@@ -32,7 +37,8 @@ limit[PERKS.BUBBLE_PIERCE] = 5;
 limit[PERKS.BUBBLE_SIZE] = 5;
 limit[PERKS.BUBBLE_SPEED] = 10;
 limit[PERKS.BUBBLE_STUN] = 10;
-limit[PERKS.TOTAL_PERKS] = 3;
+limit[PERKS.TOTAL_PERKS] = 2;
 limit[PERKS.SHOOT_SPEED] = 10;
 limit[PERKS.EXP_PICKUP_RANGE] = 5;
 limit[PERKS.SPOTLIGHT_RANGE] = 5;
+limit[PERKS.HP_DROP] = 3;

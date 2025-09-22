@@ -46,6 +46,7 @@ function Enusm(){
 		TOTAL_PERKS,
 		EXP_PICKUP_RANGE,
 		SPOTLIGHT_RANGE,
+		HP_DROP,
 		COUNT,	// End of Enum
 	}
 }

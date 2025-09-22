@@ -64,6 +64,9 @@ switch (perk) {
     case PERKS.SPOTLIGHT_RANGE: 
         txt = "Spotlight Range"; 
     break;
+    case PERKS.HP_DROP 
+        txt = "HP Drop Chance"; 
+    break;
 
     default:
         txt = "Unknown Perk";

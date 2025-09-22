@@ -22,7 +22,14 @@ var xscale = (VIEW_W+32)/sprite_get_width(spr_xp_bar)/1.1;
 draw_sprite_ext(spr_xp_bar,0,VIEW_X+buffer,VIEW_Y+buffer,xscale,1,0,c_white,1);
 draw_sprite_ext(spr_xp_bar,0,VIEW_X+buffer,VIEW_Y+buffer,xscale * (obj_player.xp / obj_player.max_xp),1,0,make_color_rgb(255,105,180),1);
 
-
+// Hearts
+for(var i = 1; i <= obj_player.max_hp; i++){
+	if(obj_player.hp >= i){
+		draw_sprite(spr_heart,0,VIEW_X + 64 * i -32, VIEW_B - 40)
+	}else{
+		draw_sprite_ext(spr_heart,0,VIEW_X + 64 * i -32, VIEW_B - 40,1,1,0,c_white,0.5)
+	}	
+}
 // Leveling up
 if(obj_player.level_up){
 	//Draw a rectangle to add depth

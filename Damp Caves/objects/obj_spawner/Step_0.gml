@@ -12,7 +12,11 @@ if(monster_timer <= 0 ){
 	
 	repeat(spawnNum){
 		var spawn_coords = random_point_on_boundary(VIEW_X - _margin, VIEW_Y - _margin, VIEW_R + _margin, VIEW_B + _margin);
-		var choice = choose(obj_slime,obj_mushroom,obj_spider,obj_snake)
+		if(difficulty > 5){
+			var choice = choose(obj_slime,obj_mushroom,obj_spider,obj_snake);
+		}else{
+			var choice = choose(obj_slime,obj_mushroom,obj_spider);
+		}
 		instance_create_depth(spawn_coords.x,spawn_coords.y,1,choice)
 	}
 }
