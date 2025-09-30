@@ -9,21 +9,12 @@ var _y = start_y + (upgrade_num * spacing);
 draw_sprite(spr_upgrade_icon,0,_x,_y)
 
 
-if (mouse_in_sprite_GUI(spr_upgrade_icon, _x, _y)) {
-    if(mouse_check_button_released(mb_left)){
-		obj_player.perks[perk]++;
-		if(is_double){
-			obj_player.perks[perk]++
-		}
-		unpause()
-	}
-	// Upgrade Description
-	//draw_sprite_ext(spr_upgrade_desc,0,700,700,20,3,0,c_white,1)
-}
+
 txt = ""; 
 switch (perk) {
     case PERKS.SHOOT_SPEED: 
         txt = "Shoot Speed Up!"; 
+		draw_sprite(spr_upgrade_shoot_speed,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_DAMAGE: 
@@ -32,7 +23,7 @@ switch (perk) {
     break;
 
     case PERKS.BUBBLE_SIZE: 
-		text = "Bubble Size	Up!"
+		txt = "Bubble Size Up!"
         draw_sprite(spr_upgrade_size,0,_x,_y) 
     break;
 
@@ -59,6 +50,7 @@ switch (perk) {
 	
     case PERKS.EXP_PICKUP_RANGE: 
         txt = "EXP Pickup range Up!"; 
+		draw_sprite(spr_upgrade_exp_range,0,_x,_y) 
     break;
 	
     case PERKS.SPOTLIGHT_RANGE: 
@@ -76,10 +68,7 @@ switch (perk) {
 gui_x = device_mouse_x_to_gui(0)
 gui_y = device_mouse_y_to_gui(0)
 
-if (point_in_rectangle(gui_x, gui_y, 0, 0, 100, 100)) {
-    obj_upgrade_bg.txt = txt;
-	show_message("a")
-}
+
 
 //draw_text_transformed(_x,_y,txt,0.25,0.25,0)
 if(is_double){
@@ -88,4 +77,19 @@ if(is_double){
 	}else{
 		draw_text_transformed(_x+20,_y+20,"x2!",0.25,0.25,0)	
 	}
+}
+
+
+if (mouse_in_sprite_GUI(spr_upgrade_icon, _x, _y)) {
+    if(mouse_check_button_released(mb_left)){
+		obj_player.perks[perk]++;
+		if(is_double){
+			obj_player.perks[perk]++
+		}
+		unpause()
+	}
+	// Upgrade Description
+	if(instance_exists(obj_upgrade_bg))
+		obj_upgrade_bg.txt = txt;
+	//draw_sprite_ext(spr_upgrade_desc,0,700,700,20,3,0,c_white,1)
 }

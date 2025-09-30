@@ -8,7 +8,8 @@
 #macro VIEW_CENTER_X (VIEW_X + VIEW_W/2) // X coordinate of the camera's center
 #macro VIEW_CENTER_Y (VIEW_Y + VIEW_H/2) // Y coordinate of the camera's center
 
-
+#macro SCREEN_CENTER_X 1920/1.2/2
+#macro SCREEN_CENTER_Y 1080/1.2/2
 view_width = 1920/1.2;
 view_height = 1080/1.2;
 
@@ -31,3 +32,5 @@ surface_resize(application_surface,view_width*window_scale,view_height*window_sc
 xp_y_offset_goal = 120
 xp_y_offset = 0
 xp_alpha = 0;
+
+game_over = false;

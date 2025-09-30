@@ -4,6 +4,7 @@ if(!global.paused){
 	if(hp <= 0){
 		scr_fadeout(0.05)
 		if(!xp_given){
+			obj_player.points += point_amount;
 			instance_create_depth(x,y,1,obj_xp,{amount:xp_amount})	
 			if(irandom(6-obj_player.perks[PERKS.HP_DROP]) <= 1){
 				instance_create_depth(x,y,1,obj_heart);	

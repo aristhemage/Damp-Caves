@@ -56,6 +56,8 @@
     {"name":"spr_upgrade_bubble_speed","order":2,"path":"sprites/spr_upgrade_bubble_speed/spr_upgrade_bubble_speed.yy",},
     {"name":"spr_upgrade_damage","order":1,"path":"sprites/spr_upgrade_damage/spr_upgrade_damage.yy",},
     {"name":"spr_upgrade_desc","order":4,"path":"sprites/spr_upgrade_desc/spr_upgrade_desc.yy",},
+    {"name":"spr_upgrade_exp_range","order":7,"path":"sprites/spr_upgrade_exp_range/spr_upgrade_exp_range.yy",},
+    {"name":"spr_upgrade_shoot_speed","order":6,"path":"sprites/spr_upgrade_shoot_speed/spr_upgrade_shoot_speed.yy",},
     {"name":"spr_upgrade_size","order":3,"path":"sprites/spr_upgrade_size/spr_upgrade_size.yy",},
     {"name":"spr_xp_bar","order":1,"path":"sprites/spr_xp_bar/spr_xp_bar.yy",},
     {"name":"spr_xp","order":4,"path":"sprites/spr_xp/spr_xp.yy",},

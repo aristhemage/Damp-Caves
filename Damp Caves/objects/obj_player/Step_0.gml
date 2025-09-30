@@ -82,6 +82,11 @@ if(!global.paused){
 	}else{
 		image_alpha = 0.5
 	}
+	// Dying
+	if(hp <= 0){
+		global.paused = true;
+		obj_camera.game_over = true;
+	}
 
 }
 
@@ -110,7 +115,11 @@ if(level_up && !level_up_setup){
 // Debug
 
 if(keyboard_check_released(ord("L"))){
-	xp = max_xp	
+	//xp = max_xp	
 }
 
-show_debug_message(invince_timer)
+if(hp <= 0){
+	if(keyboard_check(ord("R"))){
+		game_restart();	
+	}
+}

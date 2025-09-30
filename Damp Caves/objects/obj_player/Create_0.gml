@@ -42,3 +42,5 @@ limit[PERKS.SHOOT_SPEED] = 10;
 limit[PERKS.EXP_PICKUP_RANGE] = 5;
 limit[PERKS.SPOTLIGHT_RANGE] = 5;
 limit[PERKS.HP_DROP] = 3;
+
+points = 0;

@@ -11,9 +11,9 @@ if instance_exists(obj_player_camera) && instance_exists(obj_player){
 	camera_set_view_pos(view_camera[0], room_width * 0.5 - view_width * 0.5, room_height * 0.5 - view_height * 0.5);
 }
 
-// Leveled up
+// Leveled up (Also use var for game over)
 
-if(obj_player.level_up){
+if(obj_player.level_up || game_over){
 	if(xp_y_offset < xp_y_offset_goal){
 		xp_y_offset+= 4;	
 	}
@@ -21,3 +21,5 @@ if(obj_player.level_up){
 		xp_alpha +=0.01	
 	}
 }
+
+show_debug_message(VIEW_X)

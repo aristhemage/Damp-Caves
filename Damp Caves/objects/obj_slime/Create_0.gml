@@ -8,3 +8,4 @@ scale = 1;
 hp = 2;
 spd = 2 + random_range(-1,1);
 xp_amount = 2;
+point_amount = 2;
