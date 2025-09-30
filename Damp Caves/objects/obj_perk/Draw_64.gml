@@ -23,49 +23,49 @@ if (mouse_in_sprite_GUI(spr_upgrade_icon, _x, _y)) {
 txt = ""; 
 switch (perk) {
     case PERKS.SHOOT_SPEED: 
-        txt = "Shoot Speed"; 
+        txt = "Shoot Speed Up!"; 
     break;
 
     case PERKS.BUBBLE_DAMAGE: 
-		txt = ""
+		txt = "Bubble Damage Up!"
         draw_sprite(spr_upgrade_damage,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_SIZE: 
-		text = ""
+		text = "Bubble Size	Up!"
         draw_sprite(spr_upgrade_size,0,_x,_y) 
     break;
 
     case PERKS.BUBBLE_SPEED: 
-        txt = ""; 
+        txt = "Bubble Speed Up!"; 
 		draw_sprite(spr_upgrade_bubble_speed,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_LIFESPAN: 
-        txt = "Bubble Lifespan"; 
+        txt = "Bubble Lifespan Up!"; 
     break;
 
     case PERKS.BUBBLE_STUN: 
-        txt = "Bubble Stun"; 
+        txt = "Bubble Stun Up!"; 
     break;
 
     case PERKS.BUBBLE_PIERCE: 
-        txt = "Bubble Pierce"; 
+        txt = "Bubble Pierce Up!"; 
     break;
 	
     case PERKS.TOTAL_PERKS: 
-        txt = "Total Perks"; 
+        txt = "Total Perks Up!"; 
     break;
 	
     case PERKS.EXP_PICKUP_RANGE: 
-        txt = "EXP Pickup range"; 
+        txt = "EXP Pickup range Up!"; 
     break;
 	
     case PERKS.SPOTLIGHT_RANGE: 
-        txt = "Spotlight Range"; 
+        txt = "Spotlight Range Up!"; 
     break;
-    case PERKS.HP_DROP 
-        txt = "HP Drop Chance"; 
+    case PERKS.HP_DROP:
+        txt = "HP Drop Chance up!"; 
     break;
 
     default:
@@ -73,7 +73,15 @@ switch (perk) {
     break;
 }
 
-draw_text_transformed(_x,_y,txt,0.25,0.25,0)
+gui_x = device_mouse_x_to_gui(0)
+gui_y = device_mouse_y_to_gui(0)
+
+if (point_in_rectangle(gui_x, gui_y, 0, 0, 100, 100)) {
+    obj_upgrade_bg.txt = txt;
+	show_message("a")
+}
+
+//draw_text_transformed(_x,_y,txt,0.25,0.25,0)
 if(is_double){
 	if(obj_player.perks[perk] + 2 > obj_player.limit[perk]){
 		is_double = false				
