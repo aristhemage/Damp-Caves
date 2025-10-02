@@ -115,7 +115,7 @@ if(level_up && !level_up_setup){
 // Debug
 
 if(keyboard_check_released(ord("L"))){
-	//xp = max_xp	
+	xp = max_xp	
 }
 
 if(hp <= 0){

@@ -34,3 +34,7 @@ xp_y_offset = 0
 xp_alpha = 0;
 
 game_over = false;
+
+show_controlls = false;
+control_text_alpha = 0;
+controll_text_timer = 300;

@@ -22,4 +22,18 @@ if(obj_player.level_up || game_over){
 	}
 }
 
-show_debug_message(VIEW_X)
+// The controlls alpha
+if(!show_controlls){
+	if(control_text_alpha <= 1){
+		control_text_alpha += 0.01;	
+	}else{
+		controll_text_timer--;
+		if(controll_text_timer <= 0){
+			show_controlls = true;	
+		}
+	}
+}else{
+	if(control_text_alpha > 0){
+		control_text_alpha += -0.05;	
+	}
+}

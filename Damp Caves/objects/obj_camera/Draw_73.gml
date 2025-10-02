@@ -60,7 +60,10 @@ if(obj_player.level_up){
 	draw_set_valign(fa_top);
 }
 
-
+// Show the controlls for a moment, then fade
+draw_set_alpha(control_text_alpha);
+draw_text_transformed(VIEW_CENTER_X,VIEW_B-64,"WASD/Arrows to move, Click/Space to fire,\nQ to enable/disable autofire.",0.5,0.5,0);
+draw_set_alpha(1);
 if(game_over == true){
 	//Draw a rectangle to add depth
 	draw_set_colour(c_black);

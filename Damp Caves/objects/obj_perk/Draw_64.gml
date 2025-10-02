@@ -75,6 +75,7 @@ if(is_double){
 	if(obj_player.perks[perk] + 2 > obj_player.limit[perk]){
 		is_double = false				
 	}else{
+		txt += " x2!"
 		draw_text_transformed(_x+20,_y+20,"x2!",0.25,0.25,0)	
 	}
 }
