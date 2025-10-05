@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script7",
+  "%Name":"end_of_animation",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script7",
+  "name":"end_of_animation",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

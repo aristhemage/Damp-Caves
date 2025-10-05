@@ -34,18 +34,22 @@ switch (perk) {
 
     case PERKS.BUBBLE_LIFESPAN: 
         txt = "Bubble Lifespan Up!"; 
+		draw_sprite(spr_upgrade_bubble_lifespan,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_STUN: 
         txt = "Bubble Stun Up!"; 
+		draw_sprite(spr_upgrade_bubble_stun,0,_x,_y)
     break;
 
     case PERKS.BUBBLE_PIERCE: 
         txt = "Bubble Pierce Up!"; 
+		draw_sprite(spr_upgrade_bubble_pierce,0,_x,_y)
     break;
 	
     case PERKS.TOTAL_PERKS: 
         txt = "Total Perks Up!"; 
+		draw_sprite(spr_upgrade_perk_up,0,_x,_y) 
     break;
 	
     case PERKS.EXP_PICKUP_RANGE: 
@@ -55,9 +59,11 @@ switch (perk) {
 	
     case PERKS.SPOTLIGHT_RANGE: 
         txt = "Spotlight Range Up!"; 
+		draw_sprite(spr_upgrade_spotlight,0,_x,_y)
     break;
     case PERKS.HP_DROP:
         txt = "HP Drop Chance up!"; 
+		draw_sprite(spr_upgrade_health_drop,0,_x,_y) 
     break;
 
     default:
